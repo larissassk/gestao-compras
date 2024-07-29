@@ -1,17 +1,20 @@
 <?php
 include_once('controller/conexao.php');
  
+// Obtém valores enviados pelo formulário
 $categoria  = $_POST['seleciona_categoria'];
 $marca  = $_POST['seleciona_marca'];
 $nome_produto  = $_POST['nome'];
 $descricao  = $_POST['descricao'];
 $estoque  = $_POST['estoque'];
 $preco  = $_POST['preco'];
- 
+
+// consulta SQL para inserir novo produto no bd
 $grava_produto = "INSERT INTO produtos(IDCATEGORIA, IDMARCA, NOME, DESCRICAO, ESTOQUE, PRECO) VALUES ('$categoria','$marca','$nome_produto','$descricao','$estoque','$preco')";
- 
+
 $result_gravacao = mysqli_query($mysqli, $grava_produto);
- 
+
+// resultado e redirecionamento
 if(mysqli_affected_rows($mysqli) != 0){
     echo "
     <META HTTP-EQUIV=REFRESH CONTENT = 'O;URL=produtos.php'>
@@ -30,3 +33,4 @@ if(mysqli_affected_rows($mysqli) != 0){
 }
  
 ?>
+<!-- ja fiz esse -->

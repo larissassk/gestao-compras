@@ -3,7 +3,7 @@
   $user = 'root';
   $pass = '';
   $server = 'localhost';
-  $db = 'compra';
+  $db = 'compra_bd';
 
   $mysqli = mysqli_connect($server, $user, $pass, $db);
   $mysqli->set_charset('utf8');
