@@ -30,6 +30,65 @@ Crie novos pedidos após finalizar seleções. Visualize os pedidos realizados p
 - PHP
 - JavaScript
 
+## Inclusão de Código PHP
+
+### `require_once('caminho/do/arquivo.php');`
+
+Inclui e executa o código de um arquivo PHP uma única vez, garantindo que não seja incluído novamente.
+
+## Funções e Métodos Usados
+
+1. **`require_once`**  
+   Inclui e executa um arquivo PHP uma vez.
+
+2. **`$mysqli->query()`**  
+   Executa uma consulta SQL no banco de dados.
+
+3. **`mysqli_fetch_object()`**  
+   Recupera uma linha de resultado da consulta SQL como um objeto.
+
+4. **`mysqli_insert_id()`**  
+   Retorna o ID do último item inserido com AUTO_INCREMENT.
+
+5. **`session_start()`**  
+   Inicia ou retoma uma sessão PHP.
+
+6. **`unset()`**  
+   Remove uma variável ou um item específico de uma array.
+
+7. **`header()`**  
+   Envia um cabeçalho HTTP para redirecionar o navegador.
+
+8. **`str_replace()`**  
+   Substitui caracteres em uma string.
+
+9. **`mysqli_connect()`**  
+   Conecta ao banco de dados.
+
+10. **`$mysqli->set_charset('utf8')`**  
+    Define o charset para UTF-8.
+
+11. **`$mysqli->connect_error`**  
+    Verifica erros de conexão e encerra o script se houver algum.
+
+12. **`$_POST['nome_do_campo']`**  
+    Obtém valores enviados por um formulário via método POST.
+
+13. **`mysqli_query($mysqli, $consulta_sql)`**  
+    Executa uma consulta SQL no banco de dados, como inserções ou atualizações.
+
+14. **`mysqli_error($mysqli)`**  
+    Fornece informações sobre erros durante a execução da consulta SQL.
+
+15. **`mysqli_close($mysqli)`**  
+    Fecha a conexão com o banco de dados, liberando recursos.
+
+16. **`@$_GET[]`**  
+    Acessa parâmetros passados pela URL, com controle de erro.
+
+17. **`$_SESSION[]`**  
+    Armazena dados na sessão do usuário.
+
 ## Créditos
 
 **Autora:** Larissa Manrique  
