@@ -1,92 +1,84 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Tahoma;
+    font-family: Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 
 .center {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 header {
     width: 100%;
-    height: 80px;
-    background: #2962ff;
-    margin-bottom: 40px;
+    height: 60px;
+    background: #4a60d1;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 header h1 {
-    font-size: 22px;
+    font-size: 20px;
     float: left;
-    color: #fff;
-    line-height: 80px;
+    color: #ffffff;
+    line-height: 60px;
+    padding-left: 20px;
 }
 
 header a {
     float: right;
     text-decoration: none;
-    height: 40px;
-    color: #2962ff;
-    line-height: 36px;
-    margin-top: 20px;
+    color: #ffffff; /* Atualizado para a nova cor */
+    line-height: 60px;
     padding: 0 20px;
-    background: #ffffff;
+    background: #226750;
+    border-radius: 4px;
 }
 
 header a:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 section#produtos ul {
     list-style: none;
-    float: left;
-    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0;
 }
 
 section#produtos ul li {
-    float: left;
-    width: 430px;
-    padding: 20px 20px;
+    width: calc(50% - 20px);
+    padding: 20px;
     background: #ffffff;
-    margin: 20px 20px 0 0;
-    border: 1px solid #c2c2c2;
-    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section#produtos ul li h2 {
-    float: left;
-    margin-bottom: 15px;
-    color: #2a2a2a;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 section#produtos ul li p {
-    float: left;
-    color: #7e7e7e;
-    clear: left;
-    line-height: 30px;
+    color: #555;
+    line-height: 1.5;
 }
 
 section#produtos ul li a {
     text-decoration: none;
-    margin-top: 20px;
-    height: 40px;
-    line-height: 36px;
-    clear: left;
-    padding: 0 20px;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
     color: #ffffff;
-    background: #2962ff;
-    float: left;
+    background: #738af0; /* Atualizado para a nova cor */
+    border-radius: 4px;
+    transition: background 0.3s ease;
 }
 
-section#produtos a {
-    text-decoration: none;
-    margin-top: 20px;
-    height: 40px;
-    line-height: 36px; 
-    clear: left;
-    padding: 0 20px;
-    color: #ffffff;
-    background: #2962ff;
-    float: left;
+section#produtos ul li a:hover {
+    background: #4a60d1; /* Tom mais escuro da cor para o efeito hover */
 }
