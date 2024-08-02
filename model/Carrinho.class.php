@@ -105,4 +105,5 @@
       header('location: ../carrinho.php');
     }
   }
+  
 ?>

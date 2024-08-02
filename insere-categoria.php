@@ -13,4 +13,5 @@ if(mysqli_query($mysqli, $cad_categoria)){
     echo"Erro: " . $cad_categoria . "<br>" . mysqli_error($mysqli);
 }
 mysqli_close($mysqli);
+
 ?>
