@@ -11,8 +11,9 @@
 <body>
     <header>
         <div class="center">
+        <a href="index.php"  target="_self">Voltar</a>
             <h1>Cadastro de Categorias</h1>
-            <a href="index.php" target="_self">Voltar</a>
+            <a href="categoria.php">Todas categorias</a>
         </div>
     </header>
     <section id="produtos">

@@ -20,4 +20,3 @@ if(mysqli_query($mysqli, $cad_categoria)){
 mysqli_close($mysqli);
 ?>
 
-<!-- ja fiz esse -->

@@ -10,8 +10,8 @@
   <body>
     <header>
       <div class="center">
-        <h1>Programação Web II - Carrinho</h1>
-        <a href="index.php">Inicial</a>
+      <a href="index.php"  target="_self">Voltar</a>
+        <h1>PW - Carrinho</h1>
       </div>
     </header>
     <section id="produtos">

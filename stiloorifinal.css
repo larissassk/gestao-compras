@@ -1,24 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Material disponibilizado pelo professor Anderson Macedo -->
-    <meta charset="utf-8">
-    <title>Produtos</title>
-    <link rel="stylesheet" href="css/.css" media="screen" title="no title" charset="utf-8">
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-  </head>
-  <style>
 * {
     margin: 0;
     padding: 0;
     font-family: Tahoma, sans-serif;
     box-sizing: border-box;
-
-}
-body{
-      background-color: #e0e0e0;
-
 }
 
 .center {
@@ -44,9 +28,10 @@ header h1 {
 header a {
     float: right;
     text-decoration: none;
-    color: #ffffff;
+    color: #ffffff; /* Atualizado para a nova cor */
     line-height: 60px;
     padding: 0 20px;
+    background: #226750;
     border-radius: 4px;
 }
 
@@ -89,30 +74,11 @@ section#produtos ul li a {
     margin-top: 15px;
     padding: 10px 20px;
     color: #ffffff;
-    background: #738af0;
+    background: #738af0; /* Atualizado para a nova cor */
     border-radius: 4px;
     transition: background 0.3s ease;
 }
 
 section#produtos ul li a:hover {
-    background: #4a60d1;
+    background: #4a60d1; /* Tom mais escuro da cor para o efeito hover */
 }
-  </style>
-
-
-  <body>
-    <header>
-      <div class="center">
-        <h1 style="text-align: center">E-commerce - PW </h1>
-        <a id="but-carrinho" href="carrinho.php" target="_blank">Carrinho</a>
-      </div>
-    </header>
-    <section id="produtos">
-      <h1 style="text-align: center; color: #333">Pedido de Compra</h1>
-        <div class="center">
-          <?php require_once('controller/produtos-busca.php'); ?>
-        </div>
-    </section>
-
-  </body>
-</html>

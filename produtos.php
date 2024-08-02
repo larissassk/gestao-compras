@@ -8,14 +8,90 @@ include_once('controller/conexao.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Produtos</title>
-    <link rel="stylesheet" href="css/style.css">
 </head>
- 
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    width: 100%;
+    height: 60px;
+    background: #4a60d1;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+    font-size: 20px;
+    float: left;
+    color: #ffffff;
+    line-height: 60px;
+    padding-left: 20px;
+}
+
+header a {
+    float: right;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 60px;
+    padding: 0 20px;
+    border-radius: 4px;
+}
+
+header a:hover {
+    opacity: 0.7;
+}
+
+
+section#produtos {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    width: calc(100% - 40px); /* Ajusta a largura para a margem */
+    max-width: 800px; /* Limita a largura máxima */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #4a60d1;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3a50a1;
+}
+
+</style>
 <body>
     <header>
         <div class="center">
             <h1>Cadastro de produtos</h1>
-            <a href="index.php" target="_self">Voltar</a>
+            <a href="index.php"  target="_self">Voltar</a>
         </div>
     </header>
     <section id="produtos">

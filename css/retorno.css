@@ -1,0 +1,99 @@
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+/* Estilo para o corpo da página */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #4a60d1;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #226750;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+header a:hover {
+    opacity: 0.8;
+}
+
+/* Estilo para a seção do carrinho */
+section#produtos {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    width: calc(100% - 40px);
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de itens do carrinho */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+li h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+li p {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #4a60d1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botão de finalizar pedido */
+a[href="controller/produtos-pedido.php"] {
+    display: inline-block;
+    background-color: #4a60d1;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+a[href="controller/produtos-pedido.php"]:hover {
+    background-color: #3a50a1;
+}
