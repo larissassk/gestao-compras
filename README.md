@@ -11,17 +11,29 @@ O sistema oferece funcionalidades para gerenciar categorias, marcas, produtos, c
 **Gerenciamento de Categorias**  
 Organize produtos em grupos para facilitar a navegação e busca. Adicione novas categorias, visualize as existentes e mantenha uma estrutura organizada.
 
+
+
 **Gerenciamento de Marcas**  
 Adicione novas marcas e associe produtos a fabricantes ou empresas. Visualize as marcas cadastradas para manter controle sobre as marcas disponíveis.
+exemplos\vid-gif\add-marca.mp4
+![mp4](/img/vid-gif/add-marca.mp4)
+
 
 **Gerenciamento de Produtos**  
 Adicione produtos com nome, preço e descrição. Visualize todos os produtos disponíveis, modifique informações e remova itens descontinuados. Preços são exibidos e produtos podem ser adicionados ao carrinho para visualização do valor total.
+![img](/img/vid-gif/add-produtos.mp4) 
+![img](/img/vid-gif/add-prod-car.mp4)
 
 **Carrinho de Compras**  
 Adicione e remova itens do carrinho. Visualize um resumo com a lista de produtos selecionados e o valor total da compra.
+IMAGENS PARA INSERIR
+![img](/img/prod-soma-exp.png)
+![img](/img/n-d-produto.png)
+![img](/img/calculo-preco-prod.png)
 
 **Pedidos**  
 Crie novos pedidos após finalizar seleções. Visualize os pedidos realizados para acompanhar status e histórico de compras.
+![img](/img/resumo-ped.png)
 
 ## Tecnologias 
 
@@ -40,6 +52,7 @@ Inclui e executa o código de um arquivo PHP uma única vez, garantindo que não
 
 1. **`require_once`**  
    Inclui e executa um arquivo PHP uma vez.
+   ![img](/img/liga-paginas.png)
 
 2. **`$mysqli->query()`**  
    Executa uma consulta SQL no banco de dados.
@@ -64,6 +77,8 @@ Inclui e executa o código de um arquivo PHP uma única vez, garantindo que não
 
 9. **`mysqli_connect()`**  
    Conecta ao banco de dados.
+      add imagem conexao-bd.png
+      ![img](/img/conexao-bd.png)
 
 10. **`$mysqli->set_charset('utf8')`**  
     Define o charset para UTF-8.
@@ -93,5 +108,4 @@ Inclui e executa o código de um arquivo PHP uma única vez, garantindo que não
 
 **Autora:** Larissa Manrique  
 **Orientador:** Professor Leonardo Rocha [GitHub](https://github.com/LeonardoRochaMarista)
-
 **Material disponibilizado por:** Professor Anderson Macedo.
