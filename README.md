@@ -28,8 +28,8 @@ Adicione novas marcas e associe produtos a fabricantes ou empresas. Visualize as
 Adicione produtos com nome, preço e descrição. Visualize todos os produtos disponíveis, modifique informações e remova itens descontinuados. Preços são exibidos e produtos podem ser adicionados ao carrinho para visualização do valor total.
 
 <div style="display: flex; gap: 10px;">
-  <img src="/img/vid-gif/add-produtos.gif" alt="Adicionar Produto" width="200" height="150">  
-  <img src="img/vid-gif/add-prod-car.gif" alt="Adicionar Produto ao Carrinho" width="200">
+  <img src="/img/vid-gif/add-produtos.gif" alt="Adicionar Produto" width="200" height="200">  
+  <img src="img/vid-gif/add-prod-car.gif" alt="Adicionar Produto ao Carrinho" width="200" height="200">
 </div>
 
 ---
@@ -47,7 +47,7 @@ Adicione e remova itens do carrinho. Visualize um resumo com a lista de produtos
 **Pedidos** 📦  
 Crie novos pedidos após finalizar seleções. Visualize os pedidos realizados para acompanhar status e histórico de compras.
 
-<img src="img/resumo-ped.png" alt="Resumo dos Pedidos" width="200">
+<img src="img/resumo-ped.png" alt="Resumo dos Pedidos" height="200" width="200">
 
 ---
 
