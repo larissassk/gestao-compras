@@ -62,11 +62,34 @@ Crie novos pedidos após finalizar seleções. Visualize os pedidos realizados p
 
 ## Funções e Métodos Usados
 
-<img src="img/nuvem-palavras.png" alt="Nuvem de Palavras" height="200" width="400">
+<img src="img/nuvem-palavras.png" alt="Nuvem de Palavras" height="300" width="400">  
 
-BD: `require_once('caminho/do/arquivo.php');`
+---
 
-- Inclui e executa o código de um arquivo PHP uma única vez, garantindo que não seja incluído novamente.
+**conexao.php**  
+```sh
+#Criando conexão com o banco de dados
+
+<?php
+// Credenciais de conexão
+$user = 'root';          // Nome de usuário
+$pass = '';              // Senha
+$server = 'localhost';   // Servidor
+$db = 'compra_bd';       // Banco de dados
+
+// Conecta ao banco de dados
+$mysqli = new mysqli($server, $user, $pass, $db);
+
+// Verifica erros de conexão
+if ($mysqli->connect_error) {
+    die('Erro de Conexão: ' . $mysqli->connect_error);
+}
+
+// Define o charset
+$mysqli->set_charset('utf8');
+?>
+
+```
 
 1. **`require_once`**  
    Inclui e executa um arquivo PHP uma vez.
