@@ -86,7 +86,7 @@ Crie novos pedidos após finalizar seleções. Visualize os pedidos realizados p
 - **`$_SESSION[]`**: Armazena dados na sessão do usuário.
 
 ---
-## Conexão com o Banco de Dados
+## Conexão de PHP com o MySQL
 
 **conexao.php**  
 ```php
