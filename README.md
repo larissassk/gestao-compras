@@ -4,7 +4,7 @@
 
 O repositório `gestao-compras` é um projeto de sistema de e-commerce desenvolvido para gerenciar categorias, marcas, produtos e pedidos. Este repositório contém todos os arquivos necessários para a implementação das funcionalidades básicas de um sistema de compras.
 
----
+---  
 
 ## Funcionalidades
 
