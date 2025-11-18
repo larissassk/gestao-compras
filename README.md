@@ -1,101 +1,91 @@
-# Gestão de Compras
+# 🛒 Gestão de Compras (E-commerce PHP/MySQL)
 
-## Descrição
+## 📋 Descrição e Arquitetura
 
-O repositório `gestao-compras` é um projeto de sistema de e-commerce desenvolvido para gerenciar categorias, marcas, produtos e pedidos. Este repositório contém todos os arquivos necessários para a implementação das funcionalidades básicas de um sistema de compras.
+O **`gestao-compras`** é um sistema de **e-commerce monolítico** construído em **PHP Procedural** e **MySQL**. O projeto demonstra a implementação de um **CRUD (Create, Read, Update, Delete)** completo para gerenciar:
 
----  
+* **Produtos e Catálogo** (Categorias e Marcas).
+* **Carrinho de Compras** (Persistência via Sessões PHP).
+* **Pedidos** (Histórico de compras).
 
-## Funcionalidades
-
-O sistema oferece funcionalidades para gerenciar categorias, marcas, produtos, carrinho de compras e pedidos. Veja as principais funções:
-
-**Gerenciamento de Categorias**  
-Organize produtos em grupos para facilitar a navegação e busca. Adicione novas categorias, visualize as existentes e mantenha uma estrutura organizada.
+Este repositório serve como prova de conceito para o desenvolvimento de *backend* utilizando uma stack tradicional de código procedural e banco de dados relacional.
 
 ---
 
-**Gerenciamento de Marcas**  
-Adicione novas marcas e associe produtos a fabricantes ou empresas. Visualize as marcas cadastradas para manter controle sobre as marcas disponíveis.
+## ✨ Demonstração e Funcionalidades (CRUD)
 
-<div style="display: flex; gap: 10px;">
-  <img src="/img/vid-gif/add-marca.gif" alt="Adicionar Marca" width="200">  
-</div>
+### 1. Gestão de Catálogo (Categorias e Marcas)
+Demonstra a lógica básica de inserção de dados no banco de dados.
 
----
+| Adicionar Marca |
+| :---: |
+| <img src="/img/vid-gif/add-marca.gif" alt="Adicionar Marca" width="450"> |
 
-**Gerenciamento de Produtos**  
-Adicione produtos com nome, preço e descrição. Visualize todos os produtos disponíveis, modifique informações e remova itens descontinuados. Preços são exibidos e produtos podem ser adicionados ao carrinho para visualização do valor total.
+### 2. Gerenciamento de Produtos
+Funcionalidade completa de criação, visualização e adição de produtos ao carrinho.
 
-<div style="display: flex; gap: 10px;">
-  <img src="/img/vid-gif/add-produtos.gif" alt="Adicionar Produto" width="200" height="200">  
-  <img src="img/vid-gif/add-prod-car.gif" alt="Adicionar Produto ao Carrinho" width="200" height="200">
-</div>
+| Adicionar Produto | Adicionar ao Carrinho |
+| :---: | :---: |
+| <img src="/img/vid-gif/add-produtos.gif" alt="Adicionar Produto" width="350"> | <img src="img/vid-gif/add-prod-car.gif" alt="Adicionar Produto ao Carrinho" width="350"> |
 
----
+### 3. Carrinho de Compras e Pedidos 🛒📦
+Controle de estoque temporário (carrinho) e finalização de compras (pedidos).
 
-**Carrinho de Compras** 🛒  
-Adicione e remova itens do carrinho. Visualize um resumo com a lista de produtos selecionados e o valor total da compra.
-
-<div style="display: flex; gap: 10px;">
-  <img src="img/prod-soma-exp.png" alt="Resumo do Carrinho" width="200" height="200">  
-  <img src="img/calculo-preco-prod.png" alt="Cálculo de Preço do Produto" width="200" height="200">
-</div>
+| Resumo do Carrinho e Cálculo | Resumo dos Pedidos |
+| :---: | :---: |
+| <img src="img/prod-soma-exp.png" alt="Resumo do Carrinho" width="350"> <br><img src="img/calculo-preco-prod.png" alt="Cálculo de Preço do Produto" width="350"> | <img src="img/resumo-ped.png" alt="Resumo dos Pedidos" width="350"> |
 
 ---
 
-**Pedidos** 📦  
-Crie novos pedidos após finalizar seleções. Visualize os pedidos realizados para acompanhar status e histórico de compras.
+## ⚙️ Stack PHP/MySQL e Competências
 
-<img src="img/resumo-ped.png" alt="Resumo dos Pedidos" height="200" width="200">
+O projeto destaca habilidades de *backend* e manipulação de dados:
+
+
+### Competências em PHP e MySQLi:
+
+* **Manipulação de Banco de Dados:** Uso de `$mysqli->query()`, `mysqli_fetch_object()` e `mysqli_insert_id()` para consultas e inserções.
+* **Controle de Sessão:** Implementação de `session_start()` e `$_SESSION[]` para persistência de dados do carrinho.
+* **Tratamento de Dados:** Uso de `$_POST` e `@$_GET` para obter dados de formulários e URLs, com controle de erro básico.
+* **Gerenciamento de Código:** Uso de `require_once` para inclusão modular de arquivos.
+* **Controle de Conexão:** Uso de `mysqli_connect()`, `$mysqli->connect_error` e `mysqli_close()` para garantir a segurança e estabilidade da conexão.
+
+### Tecnologias Utilizadas
+
+* **Backend:** PHP
+* **Banco de Dados:** MySQL
+* **Frontend:** HTML5, CSS3, JavaScript
+* **Design:** CSS Básico
+
+---
+## Créditos
+
+**Autora:** Larissa Manrique  
+**Orientador:** Professor Leonardo Rocha [GitHub](https://github.com/LeonardoRochaMarista)  
+**Material disponibilizado por:** Professor Anderson Macedo.
 
 ---
 
-## Tecnologias Utilizadas
+## 🔨 Instalação e Configuração
 
-**HTML5**: Estruturação das páginas web.  
-**JavaScript**: Interatividade e lógica no cliente.  
-**CSS3**: Estilização e layout.  
-**PHP**: Lógica de backend.  
-**MySQL**: Banco de dados.  
+Para rodar o projeto localmente, é necessário ter um ambiente LAMP/XAMPP configurado.
 
----
+### 1. Configuração do Banco de Dados
 
-## Funções e Métodos Usados
+* Crie um banco de dados chamado `compra_bd` no seu ambiente MySQL.
+* Importe o esquema de tabelas (`.sql`) do projeto, se disponível.
 
-<img src="img/nuvem-palavras.png" alt="Nuvem de Palavras" height="300" width="400">
+### 2. Conexão (`conexao.php`)
 
-**Principais funções e métodos:**
+Verifique se o arquivo `conexao.php` tem as credenciais corretas para o seu ambiente local (`$user`, `$pass`).
 
-- **`require_once`**: Inclui e executa um arquivo PHP uma vez.
-- **`$mysqli->query()`**: Executa uma consulta SQL no banco de dados.
-- **`mysqli_fetch_object()`**: Recupera uma linha de resultado da consulta SQL como um objeto.
-- **`mysqli_insert_id()`**: Retorna o ID do último item inserido com AUTO_INCREMENT.
-- **`session_start()`**: Inicia ou retoma uma sessão PHP.
-- **`unset()`**: Remove uma variável ou um item específico de uma array.
-- **`header()`**: Envia um cabeçalho HTTP para redirecionar o navegador.
-- **`str_replace()`**: Substitui caracteres em uma string.
-- **`mysqli_connect()`**: Conecta ao banco de dados.
-- **`$mysqli->set_charset('utf8')`**: Define o charset para UTF-8.
-- **`$mysqli->connect_error`**: Verifica erros de conexão e encerra o script se houver algum.
-- **`$_POST['campo']`**: Obtém valores enviados por um formulário via método POST.
-- **`mysqli_query()`**: Executa uma consulta SQL no banco de dados, como inserções ou atualizações.
-- **`mysqli_error()`**: Fornece informações sobre erros durante a execução da consulta SQL.
-- **`mysqli_close()`**: Fecha a conexão com o banco de dados, liberando recursos.
-- **`@$_GET[]`**: Acessa parâmetros passados pela URL, com controle de erro.
-- **`$_SESSION[]`**: Armazena dados na sessão do usuário.
-
----
-## Conexão de PHP com o MySQL
-
-**conexao.php**  
 ```php
 <?php
 // Credenciais de conexão
-$user = 'root';          // Nome de usuário
-$pass = '';              // Senha
-$server = 'localhost';   // Servidor
-$db = 'compra_bd';       // Banco de dados
+$user = 'root';
+$pass = '';
+$server = 'localhost';
+$db = 'compra_bd';
 
 // Conecta ao banco de dados
 $mysqli = new mysqli($server, $user, $pass, $db);
@@ -108,12 +98,3 @@ if ($mysqli->connect_error) {
 // Define o charset
 $mysqli->set_charset('utf8');
 ?>
-```
-
----
-
-## Créditos
-
-**Autora:** Larissa Manrique  
-**Orientador:** Professor Leonardo Rocha [GitHub](https://github.com/LeonardoRochaMarista)  
-**Material disponibilizado por:** Professor Anderson Macedo.
