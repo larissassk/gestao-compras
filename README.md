@@ -58,13 +58,6 @@ O projeto destaca habilidades de *backend* e manipulação de dados:
 * **Design:** CSS Básico
 
 ---
-## Créditos
-
-**Autora:** Larissa Manrique  
-**Orientador:** Professor Leonardo Rocha [GitHub](https://github.com/LeonardoRochaMarista)  
-**Material disponibilizado por:** Professor Anderson Macedo.
-
----
 
 ## 🔨 Instalação e Configuração
 
@@ -98,3 +91,11 @@ if ($mysqli->connect_error) {
 // Define o charset
 $mysqli->set_charset('utf8');
 ?>
+
+---
+
+## Créditos
+
+**Autora:** Larissa Manrique  
+**Orientador:** Professor Leonardo Rocha [GitHub](https://github.com/LeonardoRochaMarista)  
+**Material disponibilizado por:** Professor Anderson Macedo.
