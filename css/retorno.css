@@ -8,14 +8,14 @@
 
 /* Estilo para o corpo da página */
 body {
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #333;
     font-size: 16px;
 }
 
 /* Estilo para o cabeçalho */
 header {
-    background-color: #4a60d1;
+    background-color: #3483fa;
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -31,7 +31,7 @@ header h1 {
 header a {
     color: #fff;
     text-decoration: none;
-    background-color: #226750;
+    background-color: #3483fa;
     padding: 10px 15px;
     border-radius: 4px;
 }
@@ -86,7 +86,7 @@ a:hover {
 /* Botão de finalizar pedido */
 a[href="controller/produtos-pedido.php"] {
     display: inline-block;
-    background-color: #4a60d1;
+    background-color: #3483fa;
     color: #fff;
     padding: 10px 20px;
     border-radius: 4px;
@@ -95,5 +95,5 @@ a[href="controller/produtos-pedido.php"] {
 }
 
 a[href="controller/produtos-pedido.php"]:hover {
-    background-color: #3a50a1;
+    background-color: #3483fa;
 }

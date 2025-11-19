@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,7 +18,7 @@
 
 }
 body{
-      background-color: #e0e0e0;
+      background-color: fff;
 
 }
 
@@ -29,14 +30,14 @@ body{
 header {
     width: 100%;
     height: 60px;
-    background: #4a60d1;
-    border-bottom: 1px solid #e0e0e0;
+    background: #3483fa;
+    border-bottom: 1px solid #3483fa;
 }
 
 header h1 {
     font-size: 20px;
     float: left;
-    color: #ffffff;
+    color: #fff;
     line-height: 60px;
     padding-left: 20px;
 }
@@ -44,7 +45,7 @@ header h1 {
 header a {
     float: right;
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
     line-height: 60px;
     padding: 0 20px;
     border-radius: 4px;
@@ -65,7 +66,7 @@ section#produtos ul {
 section#produtos ul li {
     width: calc(50% - 20px);
     padding: 20px;
-    background: #ffffff;
+    background: #fff;
     margin: 10px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -89,13 +90,13 @@ section#produtos ul li a {
     margin-top: 15px;
     padding: 10px 20px;
     color: #ffffff;
-    background: #738af0;
+    background: #3483fa;
     border-radius: 4px;
     transition: background 0.3s ease;
 }
 
 section#produtos ul li a:hover {
-    background: #4a60d1;
+    background: #3483fa;
 }
   </style>
 
